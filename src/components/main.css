@@ -1,0 +1,254 @@
+:root {
+    --maincolor: #ccc;
+    --second-main: #e0e0e0;
+    --dark-color: #17181f;
+    --dark-melo: #444;
+    --purple-melo: #6c72cb;
+    --pink-melo: #cb69c1;
+    --white-melo: #eeedf0;
+}
+
+/* Utilities */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.p-1 {
+    padding: 1em;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.text-muted {
+    color: rgba(160, 160, 160, 0.4);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.text-lang {
+    color: var(--maincolor);
+}
+
+
+.transition {
+    transition: all .5s ease;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .3s linear, opacity .3s linear;
+}
+
+.hide {
+    visibility: hidden;
+    height: 0px;
+    opacity: 0;
+    transition: visibility .3s linear, opacity .3s linear;
+}
+
+
+/*                       */
+.title {
+    color: var(--maincolor);
+    letter-spacing: 4px;
+    font-size: 2em;
+}
+
+.language {
+    top: 5px;
+    right: 15px;
+    width: 55px;
+    justify-content: space-between;
+}
+
+.language span {
+    cursor: pointer;
+}
+
+.introduction {
+    color: var(--maincolor);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 1100px;
+    line-height: 1.8;
+}
+
+.introduction span {
+    font-size: .9em;
+}
+
+/* Button styles  */
+.btn {
+    text-decoration: none;
+    width: 175px;
+    height: 40px;
+    gap: 4px;
+    color: var(--maincolor);
+    border: 1px dashed #444;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.btn>span {
+    position: absolute;
+    background-color: var(--dark-color);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ripples .7s linear infinite;
+}
+
+@keyframes ripples {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: .5;
+    }
+
+    100% {
+        width: 250px;
+        height: 250px;
+        opacity: 0;
+    }
+}
+
+.cv {
+    transition: all 1s ease;
+    margin-top: 2em;
+}
+
+.cv:hover {
+    color: var(--dark-melo);
+    border-style: solid;
+}
+
+.cv::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: var(--maincolor);
+    transform: skew(35deg);
+    z-index: -1;
+    transition: width 1s;
+}
+
+.cv:hover::before {
+    width: 150%;
+}
+
+/* Hover icon Styles */
+
+.html,
+.css,
+.bootstrap,
+.javascript,
+.react,
+.next {
+    position: relative;
+    transition: all .4s linear;
+    display: inline-block;
+    margin: 0 .2em;
+}
+
+.html:hover,
+.css:hover,
+.bootstrap:hover,
+.react:hover,
+.next:hover,
+.javascript:hover {
+    color: transparent;
+    transition: color .4s linear;
+}
+
+/* Html Styles */
+.html::before {
+    content: url('../../public/icons/html5.svg');
+    width: 45px;
+    position: absolute;
+    right: 15px;
+    top: -5px;
+    transform: rotateX(-90deg);
+    transition: transform .4s linear;
+}
+
+.html:hover::before {
+    transform: rotateX(0);
+}
+
+/*                       */
+/* Css styles  */
+.css::before {
+    content: url('../../public/icons/css3.svg');
+    position: absolute;
+    width: 45px;
+    right: 5px;
+    top: -5px;
+    transform: rotateX(-90deg);
+    transition: transform .4s linear;
+}
+
+.css:hover::before {
+    transform: rotate(0);
+}
+
+/*  */
+
+/* Bootstrap styles */
+.bootstrap::before {
+    content: url('../../public/icons/bootstrap.svg');
+    position: absolute;
+    width: 45px;
+    right: 27px;
+    top: -4px;
+    transform: rotateX(-90deg);
+    transition: transform .4s linear;
+}
+
+.bootstrap:hover::before {
+    transform: rotate(0);
+}
+
+/*                  */
+
+/*  Js styles */
+.javascript::before {
+    content: url('../../public/icons/javascript.svg');
+    position: absolute;
+    width: 45px;
+    right: 26px;
+    top: -7px;
+    transform: rotateX(-90deg);
+    transition: transform .4s linear;
+}
+
+.javascript:hover::before {
+    transform: rotate(0);
+}
+
+/*           */
+/* React styles  */
+.react::before {
+    content: "";
+    width: 45px;
+    position: absolute;
+}
