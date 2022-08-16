@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import Section1 from './english/section1en';
+import Section1de from './deutsch/Section1de';
+import Section1en from './english/section1en';
+import Second from './english/second';
 import './main.css';
 const Main = () => {
 
-    const [lang, setLang] = useState(false)
+    const [de, setDe] = useState(false)
 
     const rippleHandler = (e) => {
         const parentElement = e.target
@@ -23,21 +25,26 @@ const Main = () => {
 
     return (
         <>
-            <main className='main p-relative'>
+            <main className="main p-relative">
 
                 <h1 className="title text-center">Bardia Shahnazi</h1>
                 <div className="language d-flex text-lang p-absolute">
-                    <span className={lang ? `text-muted transition` : `text-lang transition`}
-                        onClick={() => setLang(false)}>En</span>
+                    <span className={de ? `text-muted transition` : `text-lang transition`}
+                        onClick={() => setDe(false)}>En</span>
                     <strong>|</strong>
-                    <span className={lang ? `text-lang transition` : `text-muted transition`}
-                        onClick={() => setLang(true)}>De</span>
+                    <span className={de ? `text-lang transition` : `text-muted transition`}
+                        onClick={() => setDe(true)}>De</span>
                 </div>
-                <Section1
-                    lang={lang}
+
+                <Section1de
+                    lang={de}
+                    rippleHandler={rippleHandler} />
+                <Section1en
+                    lang={de}
                     btnOnclick={rippleHandler}
                 />
 
+                <Second lang={de} />
             </main>
         </>
     )
