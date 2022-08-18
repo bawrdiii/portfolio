@@ -168,7 +168,8 @@
 .bootstrap,
 .javascript,
 .react,
-.next {
+.next,
+.github {
     position: relative;
     transition: all .4s linear;
     display: inline-block;
@@ -180,7 +181,8 @@
 .bootstrap:hover,
 .react:hover,
 .next:hover,
-.javascript:hover {
+.javascript:hover,
+.github:hover {
     color: transparent;
     transition: color .4s linear;
 }
@@ -265,6 +267,7 @@
 }
 
 /*           */
+/* Next js styles */
 .next::before {
     content: '';
     background-image: url('../../public/icons/next-js-logo-7929BCD36F-seeklogo.com.png');
@@ -286,6 +289,24 @@
     transform: rotate(0);
 }
 
+.github {
+    color: var(--maincolor);
+    text-decoration: none;
+}
+
+.github::before {
+    content: url('../../public/icons/icons8-github-50.svg');
+    position: absolute;
+    filter: invert();
+    top: -12px;
+    right: 4px;
+    transform: rotateX(-90deg);
+    transition: transform .4s linear;
+}
+
+.github:hover::before {
+    transform: rotate(0);
+}
 
 /* Second section */
 .d-grid {
@@ -322,6 +343,9 @@
 
 }
 
+/*                           */
 
-
-/*  */
+/* Third section  */
+.project {
+    color: var(--maincolor);
+}

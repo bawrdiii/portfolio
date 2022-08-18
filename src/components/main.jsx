@@ -3,6 +3,7 @@ import Section1de from './deutsch/Section1de';
 import Section1en from './english/section1en';
 import Second from './english/second';
 import './main.css';
+import ThirdEn from './english/thirden';
 const Main = () => {
 
     const [de, setDe] = useState(false)
@@ -45,6 +46,8 @@ const Main = () => {
                 />
 
                 <Second lang={de} />
+
+                <ThirdEn />
             </main>
         </>
     )
