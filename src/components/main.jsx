@@ -4,6 +4,8 @@ import Section1en from './english/section1en';
 import Second from './english/second';
 import './main.css';
 import ThirdEn from './english/thirden';
+import ThirdDe from './deutsch/thirdde';
+import FourthEn from './english/fourthen';
 const Main = () => {
 
     const [de, setDe] = useState(false)
@@ -28,7 +30,7 @@ const Main = () => {
         <>
             <main className="main p-relative">
 
-                <h1 className="title text-center">Bardia Shahnazi</h1>
+                <h1 className="title text-center mt-1">Bardia Shahnazi</h1>
                 <div className="language d-flex text-lang p-absolute">
                     <span className={de ? `text-muted transition` : `text-lang transition`}
                         onClick={() => setDe(false)}>En</span>
@@ -47,7 +49,9 @@ const Main = () => {
 
                 <Second lang={de} />
 
-                <ThirdEn />
+                <ThirdEn lang={de} />
+                <ThirdDe lang={de} />
+                <FourthEn />
             </main>
         </>
     )
