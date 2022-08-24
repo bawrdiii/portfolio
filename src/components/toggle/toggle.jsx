@@ -1,16 +1,18 @@
-import { useEffect } from "react"
+import { useState } from "react"
 
 
-export const Toggle = () => {
+export const Toggle = ({ onChange, value }) => {
 
-    const labelOnclick = () => {
+    const [dark, setDark] = useState(true)
 
-        let label = document.querySelector("#toggle-label")
-        label.addEventListener("click", () => {
-            let span = document.querySelector("#toggle-span")
-            span.classList.toggle("toggle-span-after")
-        })
+    const labelOnclick = (e) => {
+        e.preventDefault()
+        let span = document.querySelector("#toggle-span")
+        let label = document.querySelector('#toggle-label')
+        span.classList.toggle("toggle-span-after")
+        label.classList.toggle("toggle-label-after")
     }
+
 
 
 
@@ -19,15 +21,18 @@ export const Toggle = () => {
             <label
                 htmlFor="toggler"
                 id="toggle-label"
+                className="toggle-label"
                 onClick={labelOnclick}>
                 <input type="checkbox"
                     name="switch"
                     id="toggler"
+                    value={value}
+                    onChange={onChange}
                     title="dark / light"
                     className="switch"
                 />
                 <span className="toggle-span" id="toggle-span"></span>
             </label>
-        </div>
+        </div >
     )
 }

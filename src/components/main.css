@@ -119,7 +119,7 @@
 }
 
 
-.toggler label {
+.toggle-label {
     background: #fff;
     width: 65px;
     display: inline-block;
@@ -127,6 +127,7 @@
     padding: 2.5px;
     height: 25px;
     cursor: pointer;
+    transition: background .5s linear
 }
 
 
@@ -136,18 +137,29 @@
 }
 
 .toggle-span {
-    background-color: #0072b1;
+    background-color: var(--dark-color);
     display: inline-block;
     width: 20px;
     height: 20px;
     border-radius: 40px;
-    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, color .5s ease;
 }
 
 
 .toggle-span-after {
     transform: translateX(40px);
-    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, color .5s ease;
+}
+
+.toggle-span-after {
+    background-color: var(--white-melo);
+
+}
+
+.toggle-label-after {
+    background-color: var(--dark-melo);
+
+
 }
 
 .github-project {
