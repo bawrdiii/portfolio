@@ -46,6 +46,10 @@
     padding: 2em;
 }
 
+.l-3 {
+    left: -80px;
+}
+
 .p-relative {
     position: relative;
 }
@@ -112,6 +116,64 @@
 
 .introduction span {
     font-size: .9em;
+}
+
+
+.toggler label {
+    background: #fff;
+    width: 65px;
+    display: inline-block;
+    border-radius: 40px;
+    padding: 2.5px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+.switch {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.toggle-span {
+    background-color: #0072b1;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 40px;
+    transition: transform .5s ease-in-out;
+}
+
+
+.toggle-span-after {
+    transform: translateX(40px);
+    transition: transform .5s ease-in-out;
+}
+
+.github-project {
+    color: var(--maincolor);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.github-project::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: var(--maincolor);
+    transform-origin: left;
+    border-radius: 4px;
+    transform: scaleX(0);
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    transition: transform .7s linear;
+}
+
+.github-project:hover::before {
+    transform: scaleX(1);
 }
 
 /* Button styles  */
@@ -195,6 +257,7 @@
     display: inline-block;
     margin: 0 .2em;
 }
+
 
 .html:hover,
 .css:hover,
@@ -388,15 +451,16 @@
 
 /* Social media */
 .social {
-    background-color: var(--dark-second);
+    background-color: var(--dark-melo);
     margin-bottom: 2em;
-    height: 160px;
 }
 
 .follow {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 500px;
+    margin: auto;
 }
 
 /* Instagram styles */
@@ -411,7 +475,8 @@
 }
 
 .instagram svg:hover {
-    filter: invert() drop-shadow(0 0 10px var(--white-melo));
+    filter: invert() drop-shadow(0 0 5px #ff1177) drop-shadow(0 0 10px #d6249f)drop-shadow(0 0 15px #285aeb);
+    ;
 
 }
 
@@ -422,6 +487,296 @@
 }
 
 .for-telegram:hover {
+    filter: drop-shadow(0 0 5px #229ED9) drop-shadow(0 0 10px #2aabee) drop-shadow(0 0 15px #fff);
+}
 
-    filter: drop-shadow(0 0 10px #229ED9);
+/*                */
+
+/* Whatsapp styles */
+.for-whatsapp {
+    transition: filter .5s linear;
+}
+
+.for-whatsapp:hover {
+    filter: drop-shadow(0 0 5px #25d366) drop-shadow(0 0 10px #48ee85) drop-shadow(0 0 15px #0ec0a5);
+}
+
+/*                   */
+
+.for-github,
+.for-email {
+    filter: invert();
+    transition: filter .5s linear;
+}
+
+.for-email:hover,
+.for-github:hover {
+    filter: invert() drop-shadow(0 0 15px #333) drop-shadow(0 0 5px #f5f5f5) drop-shadow(0 0 10px #fafafa);
+}
+
+/* Email styles */
+.for-email {
+    align-self: center;
+
+}
+
+
+/*           */
+.for-linkedin {
+    transition: filter .5s linear;
+    align-self: center;
+}
+
+.for-linkedin svg {
+    fill: #0A66C2;
+}
+
+.for-linkedin:hover {
+    filter: drop-shadow(0 0 15px #0a66c2) drop-shadow(0 0 10px #fff) drop-shadow(0 0 5px #0072b1);
+}
+
+@media screen and (max-width:768.5px) {
+
+    .p-1,
+    .p-2 {
+        padding: .5em;
+    }
+
+    .social {
+        padding: .5em 0;
+    }
+
+    .follow {
+        width: 100%;
+        margin-top: .5em;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 1em;
+        justify-items: center;
+    }
+
+    .introduction {
+        width: 95%;
+    }
+
+    .html,
+    .css,
+    .bootstrap,
+    .javascript,
+    .react,
+    .next {
+        all: unset;
+    }
+
+    .html:hover,
+    .css:hover,
+    .bootstrap:hover,
+    .javascript:hover,
+    .react:hover,
+    .next:hover,
+    .github:hover {
+        color: var(--maincolor);
+    }
+
+    .html::before,
+    .css::before,
+    .bootstrap::before,
+    .javascript::before,
+    .react::before,
+    .next::before {
+        all: unset;
+    }
+
+    .github-project::before {
+        animation: scale 5s 2s infinite alternate;
+    }
+
+    .lastgit {
+        margin: 0 .5em 0 0;
+    }
+
+    .degit::before,
+    .lastgit::before {
+        bottom: -5px;
+    }
+
+    @keyframes scale {
+
+        0% {
+            transform: scaleX(0);
+        }
+
+        100% {
+            transform: scaleX(1);
+        }
+    }
+
+    .mt-3-5 {
+        margin: 5em 0 0 0;
+    }
+
+    .cv::before {
+        animation: fullwidth 5s 2s infinite alternate;
+    }
+
+    .cv:hover::before {
+        width: 0;
+    }
+
+    .cv:hover {
+        color: var(--dark-second);
+    }
+
+    .cv {
+        animation: color 5s 2s infinite alternate;
+    }
+
+    @keyframes fullwidth {
+        100% {
+            width: 150%;
+        }
+    }
+
+    @keyframes color {
+
+        60%,
+        100% {
+            color: var(--dark-second);
+        }
+
+
+    }
+
+    .grid-skills {
+        grid-template-columns: auto auto auto;
+    }
+
+    .instagram svg:hover {
+        filter: invert();
+    }
+
+    .instagram svg {
+        animation: first-color 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes first-color {
+        0% {
+            filter: invert() drop-shadow(0 0 5px #ff1177) drop-shadow(0 0 10px #d6249f)drop-shadow(0 0 15px #285aeb);
+            ;
+        }
+
+        100% {
+            filter: invert() drop-shadow(0 0 10px #ff1177) drop-shadow(0 0 15px #d6249f)drop-shadow(0 0 20px #285aeb);
+            ;
+
+        }
+    }
+
+    .for-telegram:hover {
+        filter: unset;
+    }
+
+    .for-telegram,
+    .for-telegram:active {
+        animation: second-color 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes second-color {
+        0% {
+            filter: drop-shadow(0 0 5px #229ED9) drop-shadow(0 0 10px #2aabee) drop-shadow(0 0 15px #fff);
+
+        }
+
+        100% {
+            filter: drop-shadow(0 0 15px #229ED9) drop-shadow(0 0 5px #2aabee) drop-shadow(0 0 5px #fff);
+
+        }
+    }
+
+    .for-whatsapp:hover {
+        filter: unset;
+    }
+
+    .for-whatsapp,
+    .for-whatsapp:active {
+        animation: third-color 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes third-color {
+        0% {
+            filter: drop-shadow(0 0 5px #25d366) drop-shadow(0 0 7px #48ee85) drop-shadow(0 0 10px #0ec0a5);
+        }
+
+        100% {
+            filter: drop-shadow(0 0 10px #25d366) drop-shadow(0 0 12px #48ee85) drop-shadow(0 0 7px #0ec0a5);
+
+        }
+
+    }
+
+    .for-email:hover,
+    .for-github:hover {
+        filter: invert();
+    }
+
+    .for-email,
+    .for-email:active,
+    .for-github:active,
+    .for-github {
+        animation: fourth-color 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes fourth-color {
+        0% {
+            filter: invert() drop-shadow(0 0 15px #333) drop-shadow(0 0 5px #f5f5f5) drop-shadow(0 0 5px #fafafa);
+
+        }
+
+        100% {
+            filter: invert() drop-shadow(0 0 10px #333) drop-shadow(0 0 5px #f5f5f5) drop-shadow(0 0 5px #fafafa);
+
+        }
+    }
+
+    .for-linkedin:hover {
+        filter: unset;
+    }
+
+    .for-linkedin,
+    .for-linkedin:active {
+        animation: fifth-color 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes fifth-color {
+        0% {
+            filter: drop-shadow(0 0 10px #0a66c2) drop-shadow(0 0 10px #fff) drop-shadow(0 0 5px #0072b1);
+
+        }
+
+        100% {
+            filter: drop-shadow(0 0 5px #0a66c2) drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #0072b1);
+
+
+        }
+    }
+
+
+}
+
+@media (min-width: 320px) and (max-width:389.5px) {
+    .lastgit {
+        margin-left: .3em !important;
+    }
+}
+
+@media screen and (max-width:425.5px) {
+
+    .github,
+    .github::after {
+        all: unset;
+    }
+
+    .mt-3-5 {
+        margin: 0;
+    }
 }

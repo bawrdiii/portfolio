@@ -19,11 +19,17 @@ const Section1de = ({ rippleHandler, lang }) => {
                         <span className="css">CSS3</span> und Css framework
                         <span className="bootstrap">Bootstrap</span>
                         und
-                        Javascript frameworks wie
-                        <span className="react">React.js</span> und
+                        Javascript-bibliothek wie
+                        <span className="react">React.js</span> und framework wie
                         <span className="next">Next.Js</span>
-                        viele Website zum Üben zu entwickeln. zum Beispiel Todo App und
-                        Villa Vermietungsprojekt. Insgesamt bin ich interessiert, um
+                        viele Website zum Üben zu entwickeln. zum Beispiel
+                        <a href="https://github.com/bawrdiii/Todo"
+                            target="_blank" rel="noreferrer" className="github-project">Todo App</a>
+                        und
+                        <a href="https://github.com/bawrdiii/Villa"
+                        target="_blank" rel="noreferrer"
+                            className="github-project"
+                        > Villa Vermietungsprojekt</a>. Insgesamt bin ich interessiert, um
                         Neues zu lernen. Deshalb bin ich sehr motiviert um back-end
                         zu lernen und in einem Erfahrenen Team zu arbeiten.
 
@@ -34,7 +40,8 @@ const Section1de = ({ rippleHandler, lang }) => {
                 <a className="btn cv d-flex p-relative"
                     href="/Lebenslauf.pdf"
                     download="Resume"
-                    onClick={rippleHandler}
+                    target="_blank"
+                    rel="noreferrer"
                 >
                     Meinen Lebenslauf </a>
 

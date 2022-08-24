@@ -18,12 +18,24 @@ const Section1 = ({ btnOnclick, lang, }) => {
                         <span className="css">CSS3,</span>
                         <span className="bootstrap"> Bootstrap, </span>
                         <span className="javascript"> JavaScript, </span>
-                        and frameworks
-                        such as
+
                         <span className="react"> React.js </span>
+                        library
                         and
                         <span className="next"> Next.js, </span>
-                        and I'm also learning.
+                        framework for example
+                        <a href="https://github.com/bawrdiii/Todo"
+                            target="_blank" rel="noreferrer"
+                            className="github-project">
+                            Todo app
+                        </a>and
+                        <a
+                            target="_blank" rel="noreferrer"
+                            href="https://github.com/bawrdiii/Villa"
+                            className="github-project">
+                            Villa renting project
+                        </a>.
+                        I'm also learning.
                         I'm interested in learning;
                         therefore, I want to learn back-End development also.
 
@@ -33,7 +45,8 @@ const Section1 = ({ btnOnclick, lang, }) => {
                 <a className="btn cv d-flex p-relative"
                     href="/Cv-English.pdf"
                     download="Resume.pdf"
-                    onClick={btnOnclick}
+                    target="_blank"
+                    rel="noreferrer"
                 >
                     Download my resume </a>
 

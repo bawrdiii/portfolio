@@ -6,24 +6,10 @@ import './main.css';
 import ThirdEn from './english/thirden';
 import ThirdDe from './deutsch/thirdde';
 import FourthEn from './english/fourthen';
+import { Toggle } from './toggle/toggle';
 const Main = () => {
 
     const [de, setDe] = useState(false)
-
-    const rippleHandler = (e) => {
-        const parentElement = e.target
-        let x = e.clientX - e.target.offsetLeft
-        let y = e.clientY - e.target.offsetTop
-        let ripple = document.createElement("span")
-        ripple.style.left = `${x}px`
-        ripple.style.top = `${y}px`
-        parentElement.appendChild(ripple)
-        setTimeout(() => {
-            ripple.remove()
-        }, 600);
-
-    }
-
 
 
     return (
@@ -37,21 +23,22 @@ const Main = () => {
                     <strong>|</strong>
                     <span className={de ? `text-lang transition` : `text-muted transition`}
                         onClick={() => setDe(true)}>De</span>
+                    <Toggle />
                 </div>
 
                 <Section1de
                     lang={de}
-                    rippleHandler={rippleHandler} />
+                />
                 <Section1en
                     lang={de}
-                    btnOnclick={rippleHandler}
+
                 />
 
                 <Second lang={de} />
 
                 <ThirdEn lang={de} />
                 <ThirdDe lang={de} />
-                <FourthEn />
+                <FourthEn lang={de} />
             </main>
         </>
     )
