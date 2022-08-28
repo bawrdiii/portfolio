@@ -50,9 +50,8 @@ const Main = () => {
         let theme = localStorage.getItem("Theme")
         let lang = localStorage.getItem("Language")
         const Checker = () => {
-            let match = window.matchMedia('(prefers-color-scheme:dark)').matches;
-            let mathed = window.matchMedia('(prefers-color-scheme:light)')
-            console.log(match, mathed);
+            let match = window.matchMedia('(prefers-color-scheme:light)').matches;
+            console.log(match);
             if (theme === "Light" || match) {
                 console.log(`color is light`);
                 setDark(false)
