@@ -11,7 +11,7 @@
     --background-transition: background .6s ease-in-out, color .5s ease-in;
 }
 
-@media (prefers-color-scheme:light) {
+/* @media (prefers-color-scheme:light) {
 
     .main {
         background-color: var(--second-main);
@@ -124,7 +124,7 @@
         filter: unset;
     }
 
-}
+} */
 
 .light .main {
     background-color: var(--second-main);
