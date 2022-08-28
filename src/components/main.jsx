@@ -50,16 +50,16 @@ const Main = () => {
         let theme = localStorage.getItem("Theme")
         let lang = localStorage.getItem("Language")
         const Checker = () => {
-            let match = window.matchMedia('(prefers-color-scheme:light)').matches;
-            console.log(match);
-            if (theme === "Light" || match) {
+
+
+            if (theme === "Light") {
                 console.log(`color is light`);
                 setDark(false)
                 root.classList.add("light")
                 toggleLabel.classList.add("toggle-label-after")
                 toggleSpan.classList.add("toggle-span-after")
             }
-            else if (theme === "Dark" || !match) {
+            else if (theme === "Dark") {
                 console.log(`color is dark`);
                 setDark(true)
                 root.removeAttribute("class")
