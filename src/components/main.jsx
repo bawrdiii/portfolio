@@ -50,13 +50,28 @@ const Main = () => {
         let theme = localStorage.getItem("Theme")
         let lang = localStorage.getItem("Language")
         const Checker = () => {
+            if (window.matchMedia('(prefers-color-scheme: dark)')) {
+                console.log(`dark`);
+                setDark(true)
+                root.removeAttribute("class")
+                toggleLabel.classList.remove("toggle-label-after")
+                toggleSpan.classList.remove("toggle-span-after")
+            }
+            else if (window.matchMedia('(prefers-color-scheme: light)')) {
+                console.log(`light`);
+                setDark(false)
+                toggleLabel.classList.remove("toggle-label-after")
+                toggleSpan.classList.remove("toggle-span-after")
+            }
             if (theme === "Light") {
+                console.log(`color is light`);
                 setDark(false)
                 root.classList.add("light")
                 toggleLabel.classList.add("toggle-label-after")
                 toggleSpan.classList.add("toggle-span-after")
             }
             else if (theme === "Dark") {
+                console.log(`color is dark`);
                 setDark(true)
                 root.removeAttribute("class")
                 toggleLabel.classList.remove("toggle-label-after")
