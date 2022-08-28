@@ -386,7 +386,7 @@ body {
     height: 65px;
     position: absolute;
     width: 65px;
-    right: -1px;
+    right: -3px;
     top: -15px;
     transform: rotateX(-90deg);
     transition: transform .4s ease-in-out;
