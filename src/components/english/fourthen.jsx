@@ -4,9 +4,12 @@ import "../main.css"
 const FourthEn = ({ lang }) => {
 
 
-
+    const scrollToTop = () => {
+        document.body.scrollTop = 0
+        document.documentElement.scrollTop = 0
+    }
     return (
-        <section className="p-2 show relative social">
+        <section className="p-2 social p-relative">
             <h2 className="title text-center">
                 {!lang ? `You can contact me at` :
                     `Sie können mich unter kontaktieren`
@@ -77,6 +80,13 @@ const FourthEn = ({ lang }) => {
                     </a>
                 </div>
             </div>
+
+
+
+            <div className="scroll-to-top" onClick={scrollToTop}>
+                <img src="/icons/Top_arrow-removebg-preview.png" alt="topArrow" />
+            </div>
+
 
         </section >
     )

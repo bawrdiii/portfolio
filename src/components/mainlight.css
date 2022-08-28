@@ -1,0 +1,131 @@
+:root {
+    --maincolor: #ccc;
+    --second-main: #c0c0c0;
+    --dark-color: #17181f;
+    --dark-second: #444;
+    --dark-melo: #4444;
+    --purple-melo: #6c72cb;
+    --pink-melo: #cb69c1;
+    --white-melo: #eeedf0;
+    --cloudy-white: #e0e0e0;
+    --background-transition: background .6s ease-in-out, color .5s ease-in;
+}
+
+@media (prefers-color-scheme:light) {
+    body {
+        background-color: #9e9e9e;
+    }
+
+
+}
+
+.light .main {
+    background-color: var(--second-main);
+}
+
+.light .first-section {
+    background-color: var(--purple-melo);
+}
+
+.light .title {
+    color: var(--second-main);
+    transition: var(--background-transition);
+}
+
+.light .text-lang {
+    --dark-second: #222;
+    color: var(--dark-second);
+}
+
+.light .text-muted {
+    --dark-melo: #2120207d;
+    color: var(--dark-melo);
+
+}
+
+.light .show {
+    background-color: var(--second-main);
+    color: var(--dark-color);
+    transition: var(--background-transition);
+}
+
+.light .next::before {
+    filter: unset;
+    right: -2px;
+}
+
+.light .show .introduction,
+.light .show .introduction .github-project {
+    color: var(--dark-color);
+}
+
+.light .github-project::before {
+    background-color: var(--dark-color);
+}
+
+.light .cv {
+    color: #17181f;
+}
+
+.light .cv::before {
+    background-color: var(--dark-color);
+    z-index: 0;
+}
+
+.light .btn-p {
+    position: absolute;
+    z-index: 1;
+}
+
+.light .cv:hover {
+    color: var(--white-melo);
+}
+
+.light .skill-section {
+    background: var(--purple-melo);
+}
+
+.light .nextjs img {
+    filter: unset;
+}
+
+.light .github {
+    color: var(--dark-color);
+}
+
+.light .github:hover {
+    color: transparent;
+}
+
+.light .github::after,
+.light .github::before {
+    filter: unset;
+}
+
+.light .social {
+    --purple-melo: #565ba7;
+    background: var(--purple-melo);
+}
+
+.light .for-linkedin svg {
+    fill: #2e86df;
+}
+
+.light .for-email,
+.light .for-github {
+    filter: unset;
+    transition: filter .5s linear;
+}
+
+.light .for-email:hover,
+.light .for-github:hover {
+    filter: drop-shadow(0 0 15px #ccc) drop-shadow(0 0 10px #333) drop-shadow(0 0 15px #111);
+}
+
+.light .scroll-to-top {
+    background-color: var(--maincolor);
+}
+
+.light .scroll-to-top img {
+    filter: unset;
+}

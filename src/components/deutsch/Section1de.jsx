@@ -27,7 +27,7 @@ const Section1de = ({ rippleHandler, lang }) => {
                             target="_blank" rel="noreferrer" className="github-project">Todo App</a>
                         und
                         <a href="https://github.com/bawrdiii/Villa"
-                        target="_blank" rel="noreferrer"
+                            target="_blank" rel="noreferrer"
                             className="github-project"
                         > Villa Vermietungsprojekt</a>. Insgesamt bin ich interessiert, um
                         Neues zu lernen. Deshalb bin ich sehr motiviert um back-end
@@ -43,7 +43,11 @@ const Section1de = ({ rippleHandler, lang }) => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Meinen Lebenslauf </a>
+                    <p className="btn-p">
+
+                        Meinen Lebenslauf
+                    </p>
+                </a>
 
             </article>
         </section>

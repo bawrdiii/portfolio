@@ -22,7 +22,7 @@ const Section1 = ({ btnOnclick, lang, }) => {
                         <span className="react"> React.js </span>
                         library
                         and
-                        <span className="next"> Next.js, </span>
+                        <span className="next"> Next.js </span>
                         framework for example
                         <a href="https://github.com/bawrdiii/Todo"
                             target="_blank" rel="noreferrer"
@@ -48,7 +48,10 @@ const Section1 = ({ btnOnclick, lang, }) => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Download my resume </a>
+                    <p className="btn-p">
+                        Download my resume
+                    </p>
+                </a>
 
             </article>
         </section>
