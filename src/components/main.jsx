@@ -53,7 +53,6 @@ const Main = () => {
 
             window.matchMedia('(prefers-color-scheme:dark)').addEventListener("change", (e) => {
                 let newColor = e.matches ? "dark" : "light"
-
                 if (newColor === "dark") {
                     localStorage.setItem("Theme", "Dark")
                     setDark(true)
