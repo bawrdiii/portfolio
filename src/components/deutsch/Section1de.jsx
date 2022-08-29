@@ -11,7 +11,7 @@ const Section1de = ({ rippleHandler, lang }) => {
                     <span>Mein Name ist Bardia Shahnazi.
                         Ich bin 22 Jahre alt.
                         Ich habe
-                        im Iran gewohnt aber momentan wohne ich in Budapest, Ungarn.
+                        im Iran gewohnt aber momentan wohne ich in Augsburg, Deutschland.
                         Ich würde gern sagen, dass ich
                         Erfahrung ungefähr 9 Monaten habe, um mit Programmiersprache wie
                         <span className="javascript">JavaScript</span>

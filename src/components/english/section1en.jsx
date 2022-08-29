@@ -9,7 +9,7 @@ const Section1 = ({ btnOnclick, lang, }) => {
                     Hi {"👋"}, <br />
                     <span>My name is Bardia Shahnazi.
                         I'm 22 years old. I used to live in Iran, but now
-                        I'm living in Budapest , Hungary. I have experience
+                        I'm living in Augsburg, Germany. I have experience
                         in development
                         for about 9 months.
                         I've developed many websites for training with {" "}
