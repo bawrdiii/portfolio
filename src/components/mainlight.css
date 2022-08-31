@@ -236,3 +236,15 @@
 .light .scroll-to-top img {
     filter: unset;
 }
+
+@media screen and (max-width:768px) {
+
+    .light .html:hover,
+    .light .css:hover,
+    .light .bootstrap:hover,
+    .light .javascript:hover,
+    .light .react:hover,
+    .light .next:hover {
+        color: var(--dark-color);
+    }
+}
