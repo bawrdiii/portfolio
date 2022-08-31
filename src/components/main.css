@@ -677,6 +677,20 @@ body {
         animation: color 5s 2s infinite alternate;
     }
 
+    .light .cv {
+        animation: colorDark 5s 2s infinite alternate;
+    }
+
+    @keyframes colorDark {
+        0% {
+            color: var(--dark-color);
+        }
+
+        100% {
+            color: var(--maincolor);
+        }
+    }
+
     @keyframes fullwidth {
         100% {
             width: 150%;
@@ -692,8 +706,6 @@ body {
         100% {
             color: var(--dark-second);
         }
-
-
     }
 
     .grid-skills {
