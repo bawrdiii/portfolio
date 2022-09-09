@@ -5,8 +5,7 @@ const Section1 = ({ btnOnclick, lang, }) => {
     return (
         <section className={lang ? `hide` : `show p-1`}>
             <article className="introduction p-1">
-                <h2> Short introduction: <br />
-                    Hi {"👋"}, <br />
+                <h2>Hi {"👋"}, <br />
                     <span>My name is Bardia Shahnazi.
                         I'm 22 years old. I used to live in Iran, but now
                         I'm living in Augsburg, Germany. I have experience
@@ -34,9 +33,7 @@ const Section1 = ({ btnOnclick, lang, }) => {
                             href="https://github.com/bawrdiii/Villa"
                             className="github-project">
                             Villa renting project
-                        </a>.
-                        I'm also learning.
-                        I'm interested in learning;
+                        </a>. I'm interested in learning;
                         therefore, I want to learn back-End development also.
 
                     </span>

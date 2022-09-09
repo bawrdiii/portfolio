@@ -4,7 +4,7 @@
     --dark-color: #17181f;
     --dark-second: #444;
     --dark-melo: #4444;
-    --purple-melo: #6c72cb;
+    --purple-melo: #565ba7;
     --pink-melo: #cb69c1;
     --white-melo: #eeedf0;
     --cloudy-white: #e0e0e0;
@@ -218,14 +218,12 @@
     fill: #2e86df;
 }
 
-.light .for-email,
-.light .for-github {
+.light .for-email {
     filter: unset;
     transition: filter .5s linear;
 }
 
-.light .for-email:hover,
-.light .for-github:hover {
+.light .for-email:hover {
     filter: drop-shadow(0 0 15px #ccc) drop-shadow(0 0 10px #333) drop-shadow(0 0 15px #111);
 }
 

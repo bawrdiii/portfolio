@@ -38,13 +38,6 @@ const Second = ({ lang }) => {
                     src='icons/git.svg'
                 />
                 <Badges
-                    skill="Word"
-                    src='icons/icons8-microsoft-word-2019-50.svg'
-                />
-                <Badges skill='Power Point'
-                    src='icons/icons8-microsoft-powerpoint-48.svg'
-                />
-                <Badges
                     skill='Visual studio'
                     src='icons/icons8-visual-studio-code-2019-50.svg'
                 />

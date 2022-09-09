@@ -11,7 +11,7 @@ import { Toggle } from './toggle/toggle';
 const Main = () => {
 
     const [de, setDe] = useState(false)
-    const [dark, setDark] = useState(true)
+    const [dark, setDark] = useState(false)
 
     const labelOnclick = (e) => {
         e.preventDefault()
@@ -73,6 +73,7 @@ const Main = () => {
                     setDark(false)
                 }
             })
+
             if (theme === "Light") {
                 setDark(false)
                 root.classList.add("light")

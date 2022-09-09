@@ -6,8 +6,7 @@ const Section1de = ({ rippleHandler, lang }) => {
 
         <section className={!lang ? `hide` : `p-1 show`}>
             <article className="introduction p-1">
-                <h2> Kurzvorstellung: <br />
-                    Hallo {"👋"}, <br />
+                <h2>Hallo {"👋"}, <br />
                     <span>Mein Name ist Bardia Shahnazi.
                         Ich bin 22 Jahre alt.
                         Ich habe
