@@ -50,29 +50,29 @@ const Main = () => {
         let theme = localStorage.getItem("Theme")
         let lang = localStorage.getItem("Language")
         const Checker = () => {
-            let light = window.matchMedia('(prefers-color-scheme:light)').matches
-            if (!light) {
-                localStorage.setItem("Theme", "Dark")
-                setDark(true)
-            }
-            else {
-                localStorage.setItem("Theme", "Light")
-                root.classList.add("light")
-                toggleLabel.classList.add("toggle-label-after")
-                toggleSpan.classList.add("toggle-span-after")
-                setDark(false)
-            }
-            window.matchMedia('(prefers-color-scheme:dark)').addEventListener("change", (e) => {
-                let newColor = e.matches ? "dark" : "light"
-                if (newColor === "dark") {
-                    localStorage.setItem("Theme", "Dark")
-                    setDark(true)
-                }
-                else if (newColor === "light") {
-                    localStorage.setItem("Theme", "Light")
-                    setDark(false)
-                }
-            })
+            // let light = window.matchMedia('(prefers-color-scheme:light)').matches
+            // if (!light) {
+            //     localStorage.setItem("Theme", "Dark")
+            //     setDark(true)
+            // }
+            // else {
+            //     localStorage.setItem("Theme", "Light")
+            //     root.classList.add("light")
+            //     toggleLabel.classList.add("toggle-label-after")
+            //     toggleSpan.classList.add("toggle-span-after")
+            //     setDark(false)
+            // }
+            // window.matchMedia('(prefers-color-scheme:dark)').addEventListener("change", (e) => {
+            //     let newColor = e.matches ? "dark" : "light"
+            //     if (newColor === "dark") {
+            //         localStorage.setItem("Theme", "Dark")
+            //         setDark(true)
+            //     }
+            //     else if (newColor === "light") {
+            //         localStorage.setItem("Theme", "Light")
+            //         setDark(false)
+            //     }
+            // })
 
             if (theme === "Light") {
                 setDark(false)
