@@ -673,11 +673,11 @@ body {
     }
 
     @keyframes colorDark {
-        0% {
+        from {
             color: var(--dark-color);
         }
 
-        100% {
+        to {
             color: var(--maincolor);
         }
     }
