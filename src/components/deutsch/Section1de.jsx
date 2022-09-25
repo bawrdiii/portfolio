@@ -12,7 +12,7 @@ const Section1de = ({ rippleHandler, lang }) => {
                         Ich habe
                         im Iran gewohnt aber momentan wohne ich in Augsburg, Deutschland.
                         Ich würde gern sagen, dass ich
-                        Erfahrung ungefähr 9 Monaten habe, um mit Programmiersprache wie
+                        Erfahrung ungefähr 10 Monaten habe, um mit Programmiersprache wie
                         <span className="javascript">JavaScript</span>
                         und <span className="html">HTML5,</span>
                         <span className="css">CSS3</span> und Css framework
