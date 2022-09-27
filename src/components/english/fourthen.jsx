@@ -40,7 +40,7 @@ const FourthEn = ({ lang }) => {
                     </a>
                 </div>
                 <div className="for-whatsapp">
-                    <a href="https://wa.me/989120723937"
+                    <a href="https://wa.me/4915209521571"
                         target="_blank" rel="noreferrer"
                         title="Whatsapp"
                     >
