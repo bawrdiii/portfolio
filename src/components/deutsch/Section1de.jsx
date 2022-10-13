@@ -1,5 +1,4 @@
-
-const Section1de = ({ rippleHandler, lang }) => {
+const Section1de = ({ lang }) => {
 
 
     return (
@@ -12,27 +11,35 @@ const Section1de = ({ rippleHandler, lang }) => {
                         Ich habe
                         im Iran gewohnt aber momentan wohne ich in Augsburg, Deutschland.
                         Ich würde gern sagen, dass ich
-                        Erfahrung ungefähr 10 Monaten habe, um mit Programmiersprache wie
+                        Erfahrung ungefähr 11 Monaten habe, um mit Programmiersprache wie
                         <span className="javascript">JavaScript</span>
-                        und <span className="html">HTML5,</span>
-                        <span className="css">CSS3</span> und Css framework
-                        <span className="bootstrap">Bootstrap</span>
                         und
-                        Javascript-bibliothek wie
-                        <span className="react">React.js</span> und framework wie
+                        <span className="html">HTML5,</span>
+                        <span className="css">CSS3</span>
+                        und Css framework
+                        <span className="bootstrap">Bootstrap</span>
+                        und Javascript-bibliothek wie
+                        <span className="react">React.js</span>
+                        und framework wie
                         <span className="next">Next.Js</span>
                         viele Website zum Üben zu entwickeln. zum Beispiel
-                        <a href="https://github.com/bawrdiii/Todo"
-                            target="_blank" rel="noreferrer" className="github-project">Todo App</a>
-                        und
-                        <a href="https://github.com/bawrdiii/Villa"
+                        <a
+                            href="https://github.com/bawrdiii/Todo"
                             target="_blank" rel="noreferrer"
                             className="github-project"
-                        > Villa Vermietungsprojekt</a>. Insgesamt bin ich interessiert, um
+                        >
+                            Todo App
+                        </a>
+                        und
+                        <a
+                            href="https://github.com/bawrdiii/Villa"
+                            target="_blank" rel="noreferrer"
+                            className="github-project"
+                        > Villa Vermietungsprojekt
+                        </a>.
+                        Insgesamt bin ich interessiert, um
                         Neues zu lernen. Deshalb bin ich sehr motiviert um back-end
                         zu lernen und in einem Erfahrenen Team zu arbeiten.
-
-
                     </span>
                 </h2>
 
